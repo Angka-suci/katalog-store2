@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikasi Saya</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden; 
+        }
+        .iframe-container {
+            position: absolute;
+            top: -27px; /* Memotong banner Google Apps Script */
+            left: 0;
+            width: 100%;
+            height: calc(100% + 27px); 
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="iframe-container">
+        <!-- GANTI TULISAN DI BAWAH INI DENGAN LINK WEB APP KAMU -->
+        <iframe src="https://script.google.com/macros/s/AKfycbxHrgiX3jpJhXCtP6ywNBQo85THEW_RoQDSdgjrQbpWngZEOEsck4M8Qft_uyg0nlNd/exec"></iframe>
+    </div>
+</body>
+</html>
