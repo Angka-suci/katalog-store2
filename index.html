@@ -1,21 +1,24 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aplikasi Saya</title>
+    <title>Katalog Store</title>
     <style>
         body, html {
             margin: 0;
             padding: 0;
             height: 100%;
-            overflow: hidden; 
+            overflow: hidden; /* Mencegah munculnya scrollbar ganda */
         }
         .iframe-container {
             position: absolute;
-            top: -27px; /* Memotong banner Google Apps Script */
+            /* Trik memotong banner Google */
+            top: -28px; 
             left: 0;
             width: 100%;
-            height: calc(100% + 27px); 
+            /* Menambah tinggi wadah agar bagian bawah aplikasi tidak terpotong */
+            height: calc(100% + 28px); 
         }
         iframe {
             width: 100%;
@@ -25,9 +28,12 @@
     </style>
 </head>
 <body>
+
+    <!-- Wadah ini sangat penting untuk trik pemotongan banner -->
     <div class="iframe-container">
-        <!-- GANTI TULISAN DI BAWAH INI DENGAN LINK WEB APP KAMU -->
-        <iframe src="https://script.google.com/macros/s/AKfycbxHrgiX3jpJhXCtP6ywNBQo85THEW_RoQDSdgjrQbpWngZEOEsck4M8Qft_uyg0nlNd/exec"></iframe>
+        <!-- PASTIKAN LINK INI ADALAH LINK GOOGLE APPS SCRIPT KAMU -->
+        <iframe src="https://script.google.com/macros/s/AKfycbxHrgiX3jpJhXCtP6ywNBQo85THEW_RoQDSdgjrQbpWngZEOEsck4M8Qft_uyg0nlNd/exec" allow="camera"></iframe>
     </div>
+
 </body>
 </html>
