@@ -9,18 +9,12 @@
             margin: 0;
             padding: 0;
             height: 100%;
-            overflow: hidden; /* Mencegah munculnya scrollbar ganda */
-        }
-        .iframe-container {
-            position: absolute;
-            /* Trik memotong banner Google */
-            top: -28px; 
-            left: 0;
-            width: 100%;
-            /* Menambah tinggi wadah agar bagian bawah aplikasi tidak terpotong */
-            height: calc(100% + 28px); 
+            overflow: hidden;
         }
         iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
             width: 100%;
             height: 100%;
             border: none;
@@ -28,12 +22,7 @@
     </style>
 </head>
 <body>
-
-    <!-- Wadah ini sangat penting untuk trik pemotongan banner -->
-    <div class="iframe-container">
-        <!-- PASTIKAN LINK INI ADALAH LINK GOOGLE APPS SCRIPT KAMU -->
-        <iframe src="https://script.google.com/macros/s/AKfycbxHrgiX3jpJhXCtP6ywNBQo85THEW_RoQDSdgjrQbpWngZEOEsck4M8Qft_uyg0nlNd/exec" allow="camera"></iframe>
-    </div>
-
+    <!-- Link Google Apps Script kamu ditampilkan secara penuh (100%) -->
+    <iframe src="https://script.google.com/macros/s/AKfycbxHrgiX3jpJhXCtP6ywNBQo85THEW_RoQDSdgjrQbpWngZEOEsck4M8Qft_uyg0nlNd/exec" allow="camera"></iframe>
 </body>
 </html>
